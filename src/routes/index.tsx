@@ -1,26 +1,50 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { I18nProvider } from "@/lib/i18n";
+import { Header } from "@/components/site/Header";
+import { Hero } from "@/components/site/Hero";
+import { Performance } from "@/components/site/Performance";
+import { Services } from "@/components/site/Services";
+import { Projects } from "@/components/site/Projects";
+import { WhyUs } from "@/components/site/WhyUs";
+import { Contact } from "@/components/site/Contact";
+import { Footer } from "@/components/site/Footer";
+import { WhatsAppFab } from "@/components/site/WhatsAppFab";
 
 export const Route = createFileRoute("/")({
+  head: () => ({
+    meta: [
+      { title: "Web Solutions — Agence Web Premium au Québec" },
+      {
+        name: "description",
+        content:
+          "Agence web bilingue à Québec. Sites ultra-rapides, SEO local et landing pages haute conversion pour entreprises ambitieuses.",
+      },
+      { property: "og:title", content: "Web Solutions — Agence Web Premium au Québec" },
+      {
+        property: "og:description",
+        content: "Sites web haute performance, bilingues FR/EN, conçus pour le marché du Québec.",
+      },
+    ],
+  }),
   component: Index,
 });
 
-// IMPORTANT: Replace this placeholder. For sites with multiple pages (About, Services, Contact, etc.),
-// create separate route files (about.tsx, services.tsx, contact.tsx) — don't put all pages in this file.
-function PlaceholderIndex() {
-  return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
-    </div>
-  );
-}
-
 function Index() {
-  return <PlaceholderIndex />;
+  return (
+    <I18nProvider>
+      <div className="min-h-screen bg-background">
+        <Header />
+        <main>
+          <Hero />
+          <Performance />
+          <Services />
+          <Projects />
+          <WhyUs />
+          <Contact />
+        </main>
+        <Footer />
+        <WhatsAppFab />
+      </div>
+    </I18nProvider>
+  );
 }
