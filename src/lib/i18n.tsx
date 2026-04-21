@@ -14,10 +14,10 @@ export const translations: Translations = {
     "nav.contact": "Contact",
     "nav.cta": "Devis gratuit",
 
-    "hero.eyebrow": "Agence Web · Québec",
+    "hero.eyebrow": "Agence Web bilingue",
     "hero.title1": "Transformons vos sites lents en",
     "hero.title2": "machines à vendre",
-    "hero.subtitle": "Nous concevons des sites web ultra-rapides et optimisés pour les entreprises du Québec qui veulent dominer leur marché local.",
+    "hero.subtitle": "Nous concevons des sites web modernes, rapides et bilingues pour les entreprises ambitieuses.",
     "hero.cta": "Obtenez un devis gratuit",
     "hero.cta2": "Voir nos projets",
 
@@ -36,7 +36,7 @@ export const translations: Translations = {
     "services.s1.title": "Landing Pages",
     "services.s1.desc": "Pages de conversion sur mesure, conçues pour transformer les visiteurs en clients payants.",
     "services.s2.title": "SEO Local",
-    "services.s2.desc": "Optimisation Google pour apparaître en première position dans votre quartier au Québec.",
+    "services.s2.desc": "Optimisation Google pour apparaître en première position dans votre région.",
     "services.s3.title": "Maintenance",
     "services.s3.desc": "Sécurité, mises à jour et améliorations continues pour garder votre site au sommet.",
 
@@ -47,13 +47,13 @@ export const translations: Translations = {
     "projects.view": "Voir le projet",
 
     "why.eyebrow": "Pourquoi Web Solutions",
-    "why.title": "L'avantage local, la qualité internationale",
+    "why.title": "Une approche moderne et humaine",
     "why.w1.title": "Bilingue FR / EN",
     "why.w1.desc": "Communication fluide en français et en anglais — votre projet, votre langue.",
-    "why.w2.title": "Marché du Québec",
-    "why.w2.desc": "Nous comprenons les besoins des entreprises locales et le marché québécois.",
+    "why.w2.title": "Design sur mesure",
+    "why.w2.desc": "Chaque site est conçu pour refléter votre marque, pas un modèle générique.",
     "why.w3.title": "Performance technique",
-    "why.w3.desc": "Code propre, scores PageSpeed élevés et architecture moderne.",
+    "why.w3.desc": "Code propre, sites rapides et architecture moderne.",
     "why.w4.title": "Support dédié",
     "why.w4.desc": "Un partenaire à long terme, pas seulement un fournisseur.",
 
@@ -67,7 +67,7 @@ export const translations: Translations = {
     "contact.or": "ou contactez-nous directement",
 
     "footer.rights": "Tous droits réservés.",
-    "footer.tagline": "Sites web haute performance pour le Québec.",
+    "footer.tagline": "Sites web modernes et bilingues.",
 
     "wa.tooltip": "Discutons sur WhatsApp",
   },
@@ -79,10 +79,10 @@ export const translations: Translations = {
     "nav.contact": "Contact",
     "nav.cta": "Free quote",
 
-    "hero.eyebrow": "Web Agency · Quebec",
+    "hero.eyebrow": "Bilingual Web Agency",
     "hero.title1": "Turn slow websites into",
     "hero.title2": "selling machines",
-    "hero.subtitle": "We craft blazing-fast, optimized websites for Quebec businesses ready to dominate their local market.",
+    "hero.subtitle": "We craft modern, fast and bilingual websites for ambitious businesses.",
     "hero.cta": "Get a free quote",
     "hero.cta2": "See our work",
 
