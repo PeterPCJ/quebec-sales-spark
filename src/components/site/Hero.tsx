@@ -61,8 +61,8 @@ export function Hero() {
 
           <div className="mt-10 flex items-center gap-6 text-white/60">
             <div>
-              <div className="text-2xl font-bold text-gold">94+</div>
-              <div className="text-xs uppercase tracking-wider">PageSpeed</div>
+              <div className="text-2xl font-bold text-gold">100%</div>
+              <div className="text-xs uppercase tracking-wider">Sur mesure</div>
             </div>
             <div className="h-10 w-px bg-white/20" />
             <div>
@@ -71,8 +71,8 @@ export function Hero() {
             </div>
             <div className="h-10 w-px bg-white/20" />
             <div>
-              <div className="text-2xl font-bold text-gold">Québec</div>
-              <div className="text-xs uppercase tracking-wider">Local</div>
+              <div className="text-2xl font-bold text-gold">24h</div>
+              <div className="text-xs uppercase tracking-wider">Réponse</div>
             </div>
           </div>
         </motion.div>
