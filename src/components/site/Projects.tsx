@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import { ArrowUpRight, Star } from "lucide-react";
 import { useI18n } from "@/lib/i18n";
 import b7 from "@/assets/project-b7burger.jpg";
 import foodie from "@/assets/project-foodie.png";
@@ -8,8 +7,8 @@ import medi from "@/assets/project-medicenter.jpg";
 import starbucks from "@/assets/project-starbucks.jpg";
 
 const projects = [
-  { id: "b7", title: "B7 Burger", category: "Restaurant", img: b7, featured: true },
-  { id: "foodie", title: "Foodie", category: "Restaurant", img: foodie, featured: true },
+  { id: "b7", title: "B7 Burger", category: "Restaurant", img: b7 },
+  { id: "foodie", title: "Foodie", category: "Restaurant", img: foodie },
   { id: "awax", title: "Awax Studio", category: "Design", img: awax },
   { id: "medi", title: "Medicenter", category: "Santé", img: medi },
   { id: "star", title: "Coffee Shop", category: "Café", img: starbucks },
@@ -17,8 +16,6 @@ const projects = [
 
 export function Projects() {
   const { t } = useI18n();
-  const featured = projects.filter((p) => p.featured);
-  const others = projects.filter((p) => !p.featured);
 
   return (
     <section id="projects" className="bg-secondary py-20 md:py-28">
@@ -33,51 +30,14 @@ export function Projects() {
           <p className="mt-4 text-muted-foreground">{t("projects.subtitle")}</p>
         </div>
 
-        {/* Featured */}
-        <div className="mt-14 grid gap-6 md:grid-cols-2">
-          {featured.map((p, i) => (
+        <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          {projects.map((p, i) => (
             <motion.div
               key={p.id}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ delay: i * 0.1, duration: 0.5 }}
-              className="group relative overflow-hidden rounded-3xl bg-navy shadow-elegant"
-            >
-              <div className="aspect-[16/10] overflow-hidden">
-                <img
-                  src={p.img}
-                  alt={p.title}
-                  className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
-                />
-              </div>
-              <div className="absolute inset-0 bg-gradient-to-t from-navy via-navy/40 to-transparent" />
-              <div className="absolute left-4 top-4 inline-flex items-center gap-1 rounded-full bg-gold px-3 py-1 text-[10px] font-bold uppercase tracking-wider text-gold-foreground">
-                <Star className="h-3 w-3 fill-current" />
-                {t("projects.featured")}
-              </div>
-              <div className="absolute bottom-0 left-0 right-0 p-6">
-                <div className="text-xs uppercase tracking-widest text-gold">{p.category}</div>
-                <div className="mt-1 flex items-end justify-between gap-3">
-                  <h3 className="text-2xl font-bold text-white md:text-3xl">{p.title}</h3>
-                  <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-gold text-gold-foreground transition-transform group-hover:rotate-45">
-                    <ArrowUpRight className="h-5 w-5" />
-                  </div>
-                </div>
-              </div>
-            </motion.div>
-          ))}
-        </div>
-
-        {/* Others */}
-        <div className="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {others.map((p, i) => (
-            <motion.div
-              key={p.id}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: i * 0.1, duration: 0.5 }}
+              transition={{ delay: i * 0.08, duration: 0.5 }}
               className="group relative overflow-hidden rounded-2xl bg-card shadow-card transition-shadow hover:shadow-elegant"
             >
               <div className="aspect-[4/3] overflow-hidden">
