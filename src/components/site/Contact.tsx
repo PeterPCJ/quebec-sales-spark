@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Mail, Phone, MapPin, Send, Instagram, Linkedin, Github } from "lucide-react";
+import { Mail, Phone, MapPin, Send, Instagram, Facebook } from "lucide-react";
 import { useState } from "react";
 import { useI18n } from "@/lib/i18n";
 import { Button } from "@/components/ui/button";
@@ -66,8 +66,7 @@ export function Contact() {
                 <div className="mt-3 flex gap-3">
                   {[
                     { icon: Instagram, href: "#" },
-                    { icon: Linkedin, href: "#" },
-                    { icon: Github, href: "#" },
+                    { icon: Facebook, href: "#" },
                   ].map((s, i) => {
                     const Icon = s.icon;
                     return (

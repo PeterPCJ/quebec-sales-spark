@@ -1,12 +1,12 @@
 import { motion } from "framer-motion";
-import { Globe2, MapPin, Gauge, HeartHandshake } from "lucide-react";
+import { Globe2, Palette, Gauge, HeartHandshake } from "lucide-react";
 import { useI18n } from "@/lib/i18n";
 
 export function WhyUs() {
   const { t } = useI18n();
   const items = [
     { icon: Globe2, key: "w1" },
-    { icon: MapPin, key: "w2" },
+    { icon: Palette, key: "w2" },
     { icon: Gauge, key: "w3" },
     { icon: HeartHandshake, key: "w4" },
   ];
