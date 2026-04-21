@@ -101,7 +101,7 @@ export const translations: Translations = {
     "services.s1.title": "Landing Pages",
     "services.s1.desc": "Custom-built conversion pages designed to turn visitors into paying customers.",
     "services.s2.title": "Local SEO",
-    "services.s2.desc": "Google optimization to rank first in your Quebec neighborhood.",
+    "services.s2.desc": "Google optimization to rank first in your area.",
     "services.s3.title": "Maintenance",
     "services.s3.desc": "Security, updates and continuous improvements to keep your site on top.",
 
@@ -112,13 +112,13 @@ export const translations: Translations = {
     "projects.view": "View project",
 
     "why.eyebrow": "Why Web Solutions",
-    "why.title": "Local advantage, world-class quality",
+    "why.title": "A modern, human approach",
     "why.w1.title": "Bilingual FR / EN",
     "why.w1.desc": "Fluent communication in French and English — your project, your language.",
-    "why.w2.title": "Quebec market",
-    "why.w2.desc": "We understand the needs of local businesses and the Quebec market.",
+    "why.w2.title": "Custom design",
+    "why.w2.desc": "Every site is crafted to reflect your brand, not a generic template.",
     "why.w3.title": "Technical performance",
-    "why.w3.desc": "Clean code, high PageSpeed scores and modern architecture.",
+    "why.w3.desc": "Clean code, fast websites and modern architecture.",
     "why.w4.title": "Dedicated support",
     "why.w4.desc": "A long-term partner, not just a vendor.",
 
@@ -132,7 +132,7 @@ export const translations: Translations = {
     "contact.or": "or reach us directly",
 
     "footer.rights": "All rights reserved.",
-    "footer.tagline": "High-performance websites for Quebec.",
+    "footer.tagline": "Modern, bilingual websites.",
 
     "wa.tooltip": "Chat on WhatsApp",
   },
