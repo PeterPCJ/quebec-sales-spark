@@ -37,7 +37,7 @@ export function Header() {
           <img src={logo} alt="Web Solutions" className="h-10 w-10 rounded-full object-cover" />
           <div className="leading-tight">
             <div className="text-base font-bold text-white md:text-lg">Web Solutions</div>
-            <div className="text-[10px] uppercase tracking-widest text-gold">Québec</div>
+            <div className="text-[10px] uppercase tracking-widest text-gold">Web Agency</div>
           </div>
         </a>
 
