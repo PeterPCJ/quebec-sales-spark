@@ -15,8 +15,8 @@ export const translations: Translations = {
     "nav.cta": "Devis gratuit",
 
     "hero.eyebrow": "Agence Web bilingue",
-    "hero.title1": "Transformons vos sites lents en",
-    "hero.title2": "machines à vendre",
+    "hero.title1": "Des sites web pour les entreprises",
+    "hero.title2": "qui veulent se démarquer",
     "hero.subtitle": "Nous concevons des sites web modernes, rapides et bilingues pour les entreprises ambitieuses.",
     "hero.cta": "Obtenez un devis gratuit",
     "hero.cta2": "Voir nos projets",
@@ -80,8 +80,8 @@ export const translations: Translations = {
     "nav.cta": "Free quote",
 
     "hero.eyebrow": "Bilingual Web Agency",
-    "hero.title1": "Turn slow websites into",
-    "hero.title2": "selling machines",
+    "hero.title1": "Websites for businesses",
+    "hero.title2": "that want to stand out",
     "hero.subtitle": "We craft modern, fast and bilingual websites for ambitious businesses.",
     "hero.cta": "Get a free quote",
     "hero.cta2": "See our work",

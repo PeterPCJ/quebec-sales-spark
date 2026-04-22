@@ -1,4 +1,3 @@
-import { motion } from "framer-motion";
 import { Mail, Phone, MapPin, Send, Instagram, Facebook } from "lucide-react";
 import { useState } from "react";
 import { useI18n } from "@/lib/i18n";
@@ -36,12 +35,7 @@ export function Contact() {
         </div>
 
         <div className="mt-14 grid gap-8 lg:grid-cols-5">
-          <motion.div
-            initial={{ opacity: 0, x: -20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            className="lg:col-span-2"
-          >
+          <div className="lg:col-span-2">
             <div className="rounded-3xl bg-gradient-hero p-8 text-white shadow-elegant">
               <h3 className="text-xl font-bold">Web Solutions</h3>
               <p className="mt-2 text-sm text-white/70">{t("footer.tagline")}</p>
@@ -83,12 +77,9 @@ export function Contact() {
                 </div>
               </div>
             </div>
-          </motion.div>
+          </div>
 
-          <motion.form
-            initial={{ opacity: 0, x: 20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
+          <form
             onSubmit={onSubmit}
             className="space-y-5 rounded-3xl border border-border bg-card p-8 shadow-card lg:col-span-3"
           >
@@ -133,7 +124,7 @@ export function Contact() {
               <Send className="h-4 w-4" />
               {t("contact.send")}
             </Button>
-          </motion.form>
+          </form>
         </div>
       </div>
     </section>

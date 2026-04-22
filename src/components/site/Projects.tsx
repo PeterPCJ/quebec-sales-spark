@@ -1,4 +1,3 @@
-import { motion } from "framer-motion";
 import { useI18n } from "@/lib/i18n";
 import b7 from "@/assets/project-b7burger.jpg";
 import foodie from "@/assets/project-foodie.png";
@@ -31,19 +30,16 @@ export function Projects() {
         </div>
 
         <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {projects.map((p, i) => (
-            <motion.div
+          {projects.map((p) => (
+            <div
               key={p.id}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: i * 0.08, duration: 0.5 }}
               className="group relative overflow-hidden rounded-2xl bg-card shadow-card transition-shadow hover:shadow-elegant"
             >
               <div className="aspect-[4/3] overflow-hidden">
                 <img
                   src={p.img}
                   alt={p.title}
+                  loading="lazy"
                   className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
                 />
               </div>
@@ -58,7 +54,7 @@ export function Projects() {
                 </div>
                 <h3 className="mt-1 text-base font-bold text-navy">{p.title}</h3>
               </div>
-            </motion.div>
+            </div>
           ))}
         </div>
       </div>

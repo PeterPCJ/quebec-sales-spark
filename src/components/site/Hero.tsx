@@ -1,4 +1,3 @@
-import { motion } from "framer-motion";
 import { ArrowRight, Sparkles } from "lucide-react";
 import { useI18n } from "@/lib/i18n";
 import { Button } from "@/components/ui/button";
@@ -22,24 +21,15 @@ export function Hero() {
       <div className="absolute bottom-0 right-0 h-[400px] w-[400px] rounded-full bg-gold/10 blur-3xl" />
 
       <div className="relative mx-auto grid w-full max-w-7xl gap-12 px-4 py-20 md:px-8 lg:grid-cols-2 lg:items-center">
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7 }}
-        >
-          <motion.div
-            initial={{ opacity: 0, y: 10 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.1 }}
-            className="inline-flex items-center gap-2 rounded-full border border-gold/30 bg-gold/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-gold"
-          >
+        <div>
+          <div className="inline-flex items-center gap-2 rounded-full border border-gold/30 bg-gold/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-gold">
             <Sparkles className="h-3.5 w-3.5" />
             {t("hero.eyebrow")}
-          </motion.div>
+          </div>
 
           <h1 className="mt-6 text-4xl font-extrabold leading-[1.05] text-white sm:text-5xl lg:text-6xl xl:text-7xl">
             {t("hero.title1")}{" "}
-            <span className="bg-gradient-gold bg-clip-text text-transparent">
+            <span className="text-white">
               {t("hero.title2")}
             </span>
           </h1>
@@ -75,15 +65,10 @@ export function Hero() {
               <div className="text-xs uppercase tracking-wider">Réponse</div>
             </div>
           </div>
-        </motion.div>
+        </div>
 
         {/* Visual: floating dashboard mockup */}
-        <motion.div
-          initial={{ opacity: 0, scale: 0.9, y: 30 }}
-          animate={{ opacity: 1, scale: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.2 }}
-          className="relative hidden lg:block"
-        >
+        <div className="relative hidden lg:block">
           <div className="relative mx-auto max-w-md">
             <div className="absolute -inset-4 rounded-3xl bg-gradient-gold opacity-20 blur-2xl" />
             <div className="relative rounded-2xl border border-white/10 bg-navy-light/40 p-6 shadow-elegant backdrop-blur-xl">
@@ -99,25 +84,22 @@ export function Hero() {
                 <div className="h-3 w-2/3 rounded bg-white/10" />
                 <div className="mt-4 grid grid-cols-3 gap-2">
                   {[94, 100, 98].map((n, i) => (
-                    <motion.div
+                    <div
                       key={i}
-                      initial={{ scale: 0 }}
-                      animate={{ scale: 1 }}
-                      transition={{ delay: 0.6 + i * 0.15, type: "spring" }}
                       className="rounded-lg border border-gold/30 bg-gold/10 p-3 text-center"
                     >
                       <div className="text-2xl font-bold text-gold">{n}</div>
                       <div className="text-[9px] uppercase tracking-wider text-white/60">
                         {["Perf", "A11y", "SEO"][i]}
                       </div>
-                    </motion.div>
+                    </div>
                   ))}
                 </div>
                 <div className="mt-3 h-20 rounded-lg bg-gradient-to-br from-gold/20 to-transparent" />
               </div>
             </div>
           </div>
-        </motion.div>
+        </div>
       </div>
     </section>
   );
