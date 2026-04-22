@@ -1,4 +1,3 @@
-import { motion } from "framer-motion";
 import { Rocket, Search, Wrench } from "lucide-react";
 import { useI18n } from "@/lib/i18n";
 
@@ -24,15 +23,11 @@ export function Services() {
         </div>
 
         <div className="mt-14 grid gap-6 md:grid-cols-3">
-          {items.map((item, i) => {
+          {items.map((item) => {
             const Icon = item.icon;
             return (
-              <motion.div
+              <div
                 key={item.key}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: i * 0.1, duration: 0.5 }}
                 className="group relative overflow-hidden rounded-2xl border border-border bg-card p-8 shadow-card transition-all hover:-translate-y-1 hover:border-gold hover:shadow-gold"
               >
                 <div className="absolute -right-12 -top-12 h-40 w-40 rounded-full bg-gradient-gold opacity-0 blur-2xl transition-opacity group-hover:opacity-20" />
@@ -47,7 +42,7 @@ export function Services() {
                     {t(`services.${item.key}.desc`)}
                   </p>
                 </div>
-              </motion.div>
+              </div>
             );
           })}
         </div>

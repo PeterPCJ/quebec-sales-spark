@@ -1,4 +1,3 @@
-import { motion } from "framer-motion";
 import { Globe2, Palette, Gauge, HeartHandshake } from "lucide-react";
 import { useI18n } from "@/lib/i18n";
 
@@ -26,15 +25,11 @@ export function WhyUs() {
         </div>
 
         <div className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
-          {items.map((item, i) => {
+          {items.map((item) => {
             const Icon = item.icon;
             return (
-              <motion.div
+              <div
                 key={item.key}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: i * 0.1, duration: 0.5 }}
                 className="group rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur-sm transition-all hover:-translate-y-1 hover:border-gold/40 hover:bg-white/10"
               >
                 <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-gold text-gold-foreground shadow-gold">
@@ -44,7 +39,7 @@ export function WhyUs() {
                 <p className="mt-2 text-sm leading-relaxed text-white/70">
                   {t(`why.${item.key}.desc`)}
                 </p>
-              </motion.div>
+              </div>
             );
           })}
         </div>
