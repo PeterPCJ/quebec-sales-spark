@@ -36,7 +36,7 @@ export const translations: Translations = {
     "services.s1.title": "Landing Pages",
     "services.s1.desc": "Pages de conversion sur mesure, conçues pour transformer les visiteurs en clients payants.",
     "services.s2.title": "SEO Local",
-    "services.s2.desc": "Optimisation Google pour apparaître en première position dans votre région.",
+    "services.s2.desc": "Optimisation Google pour améliorer votre visibilité locale et attirer plus de clients qualifiés.",
     "services.s3.title": "Maintenance",
     "services.s3.desc": "Sécurité, mises à jour et améliorations continues pour garder votre site au sommet.",
 
@@ -101,7 +101,7 @@ export const translations: Translations = {
     "services.s1.title": "Landing Pages",
     "services.s1.desc": "Custom-built conversion pages designed to turn visitors into paying customers.",
     "services.s2.title": "Local SEO",
-    "services.s2.desc": "Google optimization to rank first in your area.",
+    "services.s2.desc": "Google optimization to boost your local visibility and attract more qualified customers.",
     "services.s3.title": "Maintenance",
     "services.s3.desc": "Security, updates and continuous improvements to keep your site on top.",
 
