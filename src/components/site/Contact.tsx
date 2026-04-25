@@ -60,13 +60,14 @@ export function Contact() {
                 <div className="mt-3 flex gap-3">
                   {[
                     { icon: Instagram, href: "#" },
-                    { icon: Facebook, href: "#" },
+                    { icon: Facebook, href: "https://www.facebook.com/profile.php?id=61572343744349" },
                   ].map((s, i) => {
                     const Icon = s.icon;
                     return (
                       <a
                         key={i}
                         href={s.href}
+                        target="_blank"
                         className="flex h-10 w-10 items-center justify-center rounded-full border border-white/20 text-white/80 transition-colors hover:border-gold hover:bg-gold hover:text-gold-foreground"
                         aria-label="Social"
                       >
